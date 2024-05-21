@@ -1,0 +1,81 @@
+body {
+    background-color: #ebecf0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+  width: 375px;
+  height: 600px;
+  background: var(--bg-color);
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 10px 10px 30px rgb(174, 174, 192, 0.5),
+              -10px -10px 30px rgba(255, 255, 255);
+  text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+h5 {
+    margin: 0;
+    text-align: center;
+    color: #0d0a0ae1
+}
+
+::placeholder {
+    font-size: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width:65%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+    font-size: 16px;
+}
+
+button.submit {
+    width: 100%;
+    align-self:flex-end;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(117, 117, 255);
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+button.submit:hover {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+
+@media screen and (min-width:950px) {
+  .container {
+    width: 650px;
+  } 
+  .submit {
+    width: auto;
+  } 
+} 
